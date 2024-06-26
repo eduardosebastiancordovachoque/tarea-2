@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FormularioApp.MainPage">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Header Section -->
+            <Label Text="Formulario de Currículum Vitae" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+            <!-- Contact Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="CONTACTO" FontSize="18" FontAttributes="Bold"/>
+                <Entry Placeholder="Nombre" x:Name="NombreEntry"/>
+                <Entry Placeholder="Teléfono" x:Name="TelefonoEntry"/>
+                <Entry Placeholder="Email" x:Name="EmailEntry"/>
+                <Entry Placeholder="Ubicación" x:Name="UbicacionEntry"/>
+                <Entry Placeholder="LinkedIn" x:Name="LinkedInEntry"/>
+            </StackLayout>
+
+            <!-- Idiomas Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="IDIOMAS" FontSize="18" FontAttributes="Bold"/>
+                <Entry Placeholder="Idioma 1" x:Name="Idioma1Entry"/>
+                <Entry Placeholder="Idioma 2" x:Name="Idioma2Entry"/>
+                <Entry Placeholder="Idioma 3" x:Name="Idioma3Entry"/>
+            </StackLayout>
+
+            <!-- Aptitudes Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="APTITUDES" FontSize="18" FontAttributes="Bold"/>
+                <Entry Placeholder="Aptitud 1" x:Name="Aptitud1Entry"/>
+                <Entry Placeholder="Aptitud 2" x:Name="Aptitud2Entry"/>
+                <Entry Placeholder="Aptitud 3" x:Name="Aptitud3Entry"/>
+                <Entry Placeholder="Aptitud 4" x:Name="Aptitud4Entry"/>
+                <Entry Placeholder="Aptitud 5" x:Name="Aptitud5Entry"/>
+            </StackLayout>
+
+            <!-- Habilidades Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="HABILIDADES" FontSize="18" FontAttributes="Bold"/>
+                <Entry Placeholder="Habilidad 1" x:Name="Habilidad1Entry"/>
+                <Entry Placeholder="Habilidad 2" x:Name="Habilidad2Entry"/>
+                <Entry Placeholder="Habilidad 3" x:Name="Habilidad3Entry"/>
+                <Entry Placeholder="Habilidad 4" x:Name="Habilidad4Entry"/>
+                <Entry Placeholder="Habilidad 5" x:Name="Habilidad5Entry"/>
+            </StackLayout>
+
+            <!-- Otros Intereses Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="OTROS INTERESES" FontSize="18" FontAttributes="Bold"/>
+                <Entry Placeholder="Interés 1" x:Name="Interes1Entry"/>
+                <Entry Placeholder="Interés 2" x:Name="Interes2Entry"/>
+                <Entry Placeholder="Interés 3" x:Name="Interes3Entry"/>
+            </StackLayout>
+
+            <!-- Perfil Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="PERFIL" FontSize="18" FontAttributes="Bold"/>
+                <Editor Placeholder="Escribe tu perfil" x:Name="PerfilEditor" HeightRequest="100"/>
+            </StackLayout>
+
+            <!-- Experiencia Laboral Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="EXPERIENCIA LABORAL" FontSize="18" FontAttributes="Bold"/>
+                <Editor Placeholder="Describe tu experiencia laboral" x:Name="ExperienciaEditor" HeightRequest="100"/>
+            </StackLayout>
+
+            <!-- Formación Section -->
+            <StackLayout Padding="0,20,0,0">
+                <Label Text="FORMACIÓN" FontSize="18" FontAttributes="Bold"/>
+                <Editor Placeholder="Describe tu formación educativa" x:Name="FormacionEditor" HeightRequest="100"/>
+            </StackLayout>
+
+            <!-- Submit Button -->
+            <Button Text="Generar Currículum" Clicked="OnSubmitClicked" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
